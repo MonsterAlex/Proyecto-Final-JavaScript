@@ -1,19 +1,3 @@
-/*/////////Oprimiendo Teclado Numerico
-function mostrarNumero(event)
-{
-    var teclaNumeros = event.which || event.keyCode;  
-    document.querySelector('.pantalla #display').innerHTML=String.fromCharCode(teclaNumeros);
-}
-document.onkeypress=mostrarNumero;*/
-
-////////////Modificar Tamaño de Tecla
-var btnTecla = document.getElementsByClassName("tecla");
-
-btnTecla.addEventListener("click",function(event)
-{
-    btnTecla.style.width = "20%";
-});
-
 /////////////////////////////////////Tecla ON/C
 var teclaOn = document.getElementById('on');
 
@@ -23,38 +7,106 @@ teclaOn.addEventListener("click",function(event)
     document.querySelector('.pantalla #display').innerHTML = mensaje;
 });
 
-///////Teclado Numerico
-var TeclasNum = document.getElementsByClassName('tecla');
+/////////////////////////////////Teclado Numerico
 
-TeclasNum.addEventListener("click",function(event)
+//Tecla1//
+var tec1 = document.getElementById('1');
+tec1.addEventListener("click",function(event)
 {
-    var tec1 = document.getElementById('1');
-    var tec2 = document.getElementById('2');
-    var tec3 = document.getElementById('3');
-    var tec4 = document.getElementById('4');
-    var tec5 = document.getElementById('5');
-    var tec6 = document.getElementById('6');
-    var tec7 = document.getElementById('7');
-    var tec8 = document.getElementById('8');
-    var tec9 = document.getElementById('9');
-    var tec0 = document.getElementById('0');
     var MnsTecla1 ="1";
-    var MnsTecla2 ="2";
-    var MnsTecla3 ="3";
-    var MnsTecla4 ="4";
-    var MnsTecla5 ="5";
-    var MnsTecla6 ="6";
-    var MnsTecla7 ="7";
-    var MnsTecla8 ="8";
-    var MnsTecla9 ="9";
-    var MnsTecla0 ="0";
-    
-    if(TeclasNum == tec1)
-    {
-        document.querySelector('.pantalla #display').innerHTML = MnsTecla1;
-    }
+    tec1.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla1;
 });
 
+//Tecla2//
+var tec2 = document.getElementById('2');
+tec2.addEventListener("click",function(event)
+{
+    var MnsTecla2 ="2";
+    tec2.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla2;
+});
+
+//Tecla3//
+var tec3 = document.getElementById('3');
+tec3.addEventListener("click",function(event)
+{
+    var MnsTecla3 ="3";
+    tec3.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla3;
+});
+
+//Tecla4//
+var tec4 = document.getElementById('4');
+tec4.addEventListener("click",function(event)
+{
+    var MnsTecla4 ="4";
+    tec4.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla4;
+});
+
+//Tecla5//
+var tec5 = document.getElementById('5');
+tec5.addEventListener("click",function(event)
+{
+    var MnsTecla5 ="5";
+    tec5.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla5;
+});
+
+//Tecla6//
+var tec6 = document.getElementById('6');
+tec6.addEventListener("click",function(event)
+{
+    var MnsTecla6 ="6";
+    tec6.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla6;
+});
+
+//Tecla7//
+var tec7 = document.getElementById('7');
+tec7.addEventListener("click",function(event)
+{
+    var MnsTecla7 ="7";
+    tec7.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla7;
+});
+
+//Tecla8//
+var tec8 = document.getElementById('8');
+tec8.addEventListener("click",function(event)
+{
+    var MnsTecla8 ="8";
+    tec8.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla8;
+});
+
+//Tecla9//
+var tec9 = document.getElementById('9');
+tec9.addEventListener("click",function(event)
+{
+    var MnsTecla9 ="9";
+    tec9.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla9;
+});
+
+//Tecla0//
+var tec0 = document.getElementById('0');
+tec0.addEventListener("click",function(event)
+{
+    var MnsTecla0 ="0";
+    tec0.style.width = "20%";
+    document.querySelector('.pantalla #display').innerHTML = MnsTecla0;
+});
+
+//tecla.//
+var tecpunto = document.getElementById('punto')
+tecpunto.addEventListener("click",function(event)
+{
+    var MnsPunto=".";
+    tecpunto.style.width ="20%";
+    document.querySelector('.pantalla #diplay').innerHTML = MnsPunto;
+});
 //////////////////////Operaciones Basicas
 var Sumar = document.getElementById('mas');
 var Restar = document.getElementById('menos');
