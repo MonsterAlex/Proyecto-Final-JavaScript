@@ -10,11 +10,21 @@ teclaOn.addEventListener("click",function(event)
 /////////////////////////////////Teclado Numerico
 
 //Tecla1//
+function tamañoNormal(){
+    document.getElementById('1').style.width="22%;";
+    document.getElementById('1').style.height="62.91px;";
+}
+function ReducirTamaño(){
+    document.getElementById('1').style.width="20%;";
+    document.getElementById('1').style.height="height: 59.91px;";
+}
+
 var tec1 = document.getElementById('1');
 tec1.addEventListener("click",function(event)
 {
     var MnsTecla1 ="1";
-    tec1.style.width = "20%";
+    document.getElementById('1').onclick=ReducirTamaño;
+    document.getElementById('1').onmouseout=tamañoNormal; 
     document.querySelector('.pantalla #display').innerHTML = MnsTecla1;
 });
 
@@ -107,6 +117,48 @@ tecpunto.addEventListener("click",function(event)
     tecpunto.style.width ="20%";
     document.querySelector('.pantalla #diplay').innerHTML = MnsPunto;
 });
+/////////////////////////////////Teclas de operacion
+
+//operacion Suma//
+var tecsuma = document.getElementById('mas')
+tecsuma.addEventListener("click",function(event)
+{
+    var mensaje1="+";
+    document.querySelector('.pantalla #display').innerHTML = mensaje1;
+});
+
+//operacion Resta//
+var tecresta = document.getElementById('menos')
+tecresta.addEventListener("click",function(event)
+{
+    var mensaje2="-";
+    document.querySelector('.pantalla #display').innerHTML = mensaje2;
+});
+
+//operacion Multiplicacion//
+var tecmulti = document.getElementById('por')
+tecmulti.addEventListener("click",function(event)
+{
+    var mensaje3="*";
+    document.querySelector('.pantalla #display').innerHTML = mensaje3;
+});
+
+//operacion divicion//
+var tecdivicion = document.getElementById('dividido')
+tecdivicion.addEventListener("click",function(event)
+{
+    var mensaje4="/";
+    document.querySelector('.pantalla #display').innerHTML = mensaje4;
+});
+
+//Signo negativo//
+var tecnegativa = document.getElementById('sign')
+tecnegativa.addEventListener("click",function(event)
+{
+    var signNegativo="-";
+    document.querySelector('.pantalla #display').innerHTML = signNegativo;
+});
+
 //////////////////////Operaciones Basicas
 var Sumar = document.getElementById('mas');
 var Restar = document.getElementById('menos');
