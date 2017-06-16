@@ -91,14 +91,14 @@ tec3.addEventListener("click",function(event)
 
 ////Tecla4////
 //Cambio de Tamaño//
-document.getElementById('4').addEventListener("mousedown", mouseDown);
-document.getElementById('4').addEventListener("mouseup", mouseUp);
+document.getElementById('4').addEventListener("mousedown", numPress);
+document.getElementById('4').addEventListener("mouseup", NumdesPress);
 
-function mouseDown()
+function numPress()
 {
     document.getElementById('4').style.width="21%";
 }
-function mouseUp()
+function NumdesPress()
 {
     document.getElementById('4').style.width="22%";
 }
@@ -113,14 +113,14 @@ tec4.addEventListener("click",function(event)
 
 ////Tecla5////
 //Cambio de Tamaño//
-document.getElementById('5').addEventListener("mousedown", mouseDown);
-document.getElementById('5').addEventListener("mouseup", mouseUp);
+document.getElementById('5').addEventListener("mousedown", botPress);
+document.getElementById('5').addEventListener("mouseup", botdesPress);
 
-function mouseDown()
+function botPress()
 {
     document.getElementById('5').style.width="21%";
 }
-function mouseUp()
+function botdesPress()
 {
     document.getElementById('5').style.width="22%";
 }
@@ -135,14 +135,14 @@ tec5.addEventListener("click",function(event)
 
 ////Tecla6////
 //Cambio de Tamaño//
-document.getElementById('6').addEventListener("mousedown", mouseDown);
-document.getElementById('6').addEventListener("mouseup", mouseUp);
+document.getElementById('6').addEventListener("mousedown", botoPress);
+document.getElementById('6').addEventListener("mouseup", botodesPress);
 
-function mouseDown()
+function botoPress()
 {
     document.getElementById('6').style.width="21%";
 }
-function mouseUp()
+function botodesPress()
 {
     document.getElementById('6').style.width="22%";
 }
@@ -157,14 +157,14 @@ tec6.addEventListener("click",function(event)
 
 ////Tecla7////
 //Cambio de Tamaño//
-document.getElementById('7').addEventListener("mousedown", mouseDown);
-document.getElementById('7').addEventListener("mouseup", mouseUp);
+document.getElementById('7').addEventListener("mousedown", botonPress);
+document.getElementById('7').addEventListener("mouseup", botondesPress);
 
-function mouseDown()
+function botonPress()
 {
     document.getElementById('7').style.width="21%";
 }
-function mouseUp()
+function botondesPress()
 {
     document.getElementById('7').style.width="22%";
 }
@@ -179,14 +179,14 @@ tec7.addEventListener("click",function(event)
 
 ////Tecla8////
 //Cambio de Tamaño//
-document.getElementById('8').addEventListener("mousedown", mouseDown);
-document.getElementById('8').addEventListener("mouseup", mouseUp);
+document.getElementById('8').addEventListener("mousedown", numePress);
+document.getElementById('8').addEventListener("mouseup", numedesPress);
 
-function mouseDown()
+function numePress()
 {
     document.getElementById('8').style.width="21%";
 }
-function mouseUp()
+function numedesPress()
 {
     document.getElementById('8').style.width="22%";
 }
@@ -201,14 +201,14 @@ tec8.addEventListener("click",function(event)
 
 ////Tecla9////
 //Cambio de Tamaño//
-document.getElementById('9').addEventListener("mousedown", mouseDown);
-document.getElementById('9').addEventListener("mouseup", mouseUp);
+document.getElementById('9').addEventListener("mousedown", Presionandobnt);
+document.getElementById('9').addEventListener("mouseup", desprecionandobtn);
 
-function mouseDown()
+function Presionandobnt()
 {
     document.getElementById('9').style.width="21%";
 }
-function mouseUp()
+function desprecionandobtn()
 {
     document.getElementById('9').style.width="22%";
 }
@@ -223,14 +223,14 @@ tec9.addEventListener("click",function(event)
 
 ////Tecla0////
 //Cambio de Tamaño//
-document.getElementById('0').addEventListener("mousedown", mouseDown);
-document.getElementById('0').addEventListener("mouseup", mouseUp);
+document.getElementById('0').addEventListener("mousedown", PressBtn);
+document.getElementById('0').addEventListener("mouseup", DesPress);
 
-function mouseDown()
+function PressBtn()
 {
     document.getElementById('0').style.width="21%";
 }
-function mouseUp()
+function DesPress()
 {
     document.getElementById('0').style.width="22%";
 }
@@ -245,14 +245,14 @@ tec0.addEventListener("click",function(event)
 
 ////tecla.////
 //Cambio de Tamaño//
-document.getElementById('punto').addEventListener("mousedown", mouseDown);
-document.getElementById('punto').addEventListener("mouseup", mouseUp);
+document.getElementById('punto').addEventListener("mousedown", PuntoPress);
+document.getElementById('punto').addEventListener("mouseup", PuntoDesPress);
 
-function mouseDown()
+function PuntoPress()
 {
     document.getElementById('punto').style.width="21%";
 }
-function mouseUp()
+function PuntoDesPress()
 {
     document.getElementById('punto').style.width="22%";
 }
@@ -268,14 +268,14 @@ tecpunto.addEventListener("click",function(event)
 
 ////operacion Suma////
 //Cambio de Tamaño//
-document.getElementById('mas').addEventListener("mousedown", mouseDown);
-document.getElementById('mas').addEventListener("mouseup", mouseUp);
+document.getElementById('mas').addEventListener("mousedown", SumaPress);
+document.getElementById('mas').addEventListener("mouseup", SumaDesPress);
 
-function mouseDown()
+function SumaPress()
 {
     document.getElementById('mas').style.width="21%";
 }
-function mouseUp()
+function SumaDesPress()
 {
     document.getElementById('mas').style.width="22%";
 }
@@ -289,14 +289,14 @@ tecsuma.addEventListener("click",function(event)
 
 ////operacion Resta////
 //Cambio de Tamaño//
-document.getElementById('menos').addEventListener("mousedown", mouseDown);
-document.getElementById('menos').addEventListener("mouseup", mouseUp);
+document.getElementById('menos').addEventListener("mousedown", RestaPress);
+document.getElementById('menos').addEventListener("mouseup", RestaDesPress);
 
-function mouseDown()
+function RestaPress()
 {
     document.getElementById('menos').style.width="21%";
 }
-function mouseUp()
+function RestaDesPress()
 {
     document.getElementById('menos').style.width="22%";
 }
@@ -310,14 +310,14 @@ tecresta.addEventListener("click",function(event)
 
 ////operacion Multiplicacion////
 //Cambio de Tamaño//
-document.getElementById('por').addEventListener("mousedown", mouseDown);
-document.getElementById('por').addEventListener("mouseup", mouseUp);
+document.getElementById('por').addEventListener("mousedown", PorPress);
+document.getElementById('por').addEventListener("mouseup", PorDesPress);
 
-function mouseDown()
+function PorPress()
 {
     document.getElementById('por').style.width="21%";
 }
-function mouseUp()
+function PorDesPress()
 {
     document.getElementById('por').style.width="22%";
 }
@@ -331,14 +331,14 @@ tecmulti.addEventListener("click",function(event)
 
 ////operacion divicion////
 //Cambio de Tamaño//
-document.getElementById('dividido').addEventListener("mousedown", mouseDown);
-document.getElementById('dividido').addEventListener("mouseup", mouseUp);
+document.getElementById('dividido').addEventListener("mousedown", DividirPress);
+document.getElementById('dividido').addEventListener("mouseup", DividirDesPress);
 
-function mouseDown()
+function DividirPress()
 {
     document.getElementById('dividido').style.width="21%";
 }
-function mouseUp()
+function DividirDesPress()
 {
     document.getElementById('dividido').style.width="22%";
 }
@@ -352,14 +352,14 @@ tecdivicion.addEventListener("click",function(event)
 
 ////Signo negativo////
 //Cambio de Tamaño//
-document.getElementById('sign').addEventListener("mousedown", mouseDown);
-document.getElementById('sign').addEventListener("mouseup", mouseUp);
+document.getElementById('sign').addEventListener("mousedown", SignoPress);
+document.getElementById('sign').addEventListener("mouseup", SignoDesPress);
 
-function mouseDown()
+function SignoPress()
 {
     document.getElementById('sign').style.width="21%";
 }
-function mouseUp()
+function SignoDesPress()
 {
     document.getElementById('sign').style.width="22%";
 }
@@ -373,14 +373,14 @@ tecnegativa.addEventListener("click",function(event)
 
 ////Resultados y Consecutivos////
 //Cambio de Tamaño//
-document.getElementById('igual').addEventListener("mousedown", mouseDown);
-document.getElementById('igual').addEventListener("mouseup", mouseUp);
+document.getElementById('igual').addEventListener("mousedown", IgualPress);
+document.getElementById('igual').addEventListener("mouseup", IgualDesPress);
 
-function mouseDown()
+function IgualPress()
 {
-    document.getElementById('igual').style.width="21%";
+    document.getElementById('igual').style.width="21%"; 
 }
-function mouseUp()
+function IgualDesPress()
 {
     document.getElementById('igual').style.width="22%";
 }
@@ -393,7 +393,9 @@ tecResult.addEventListener("click",function(event)
 });
 
 /////////////////////////////////asignar Valores
-function retornaValores()
+function retornaValores(num)
 {
+    var anterior = document.querySelector('.pantalla #display').value;
     
+    document.getElementById("display").value = anterior + num;
 }
