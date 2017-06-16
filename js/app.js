@@ -1,19 +1,16 @@
 /////////////////////////////////////Tecla ON/C
-//Cambio de Tamaño//
-document.getElementById('on').addEventListener("mousedown", mouseDowni);
-document.getElementById('on').addEventListener("mouseup", mouseUpi);
-
-function mouseDowni()
-{
-    document.getElementById('on').style.width="21%";
-}
-function mouseUpi()
-{
-    document.getElementById('on').style.width="22%";
-}
-////
 var teclaOn = document.getElementById('on');
+//Cambio de Tamaño//
+teclaOn.addEventListener("mousedown", function()
+{
+    teclaOn.setAttribute("style","transform:scale(0.95,0.95)")
+});
 
+teclaOn.addEventListener("mouseout", function()
+{
+    teclaOn.setAttribute("style","transform:scale(1,1)")
+});
+////////
 teclaOn.addEventListener("click",function(event)
 {
     var mensaje = "Hola";
@@ -23,264 +20,228 @@ teclaOn.addEventListener("click",function(event)
 /////////////////////////////////Teclado Numerico
 
 ////Tecla1////
-//Cambio de Tamaño//
-document.getElementById('1').addEventListener("mousedown", mouseDowno);
-document.getElementById('1').addEventListener("mouseup", mouseUpo);
-
-function mouseDowno()
-{
-    document.getElementById('1').style.width="21%";
-}
-function mouseUpo()
-{
-    document.getElementById('1').style.width="22%";
-}
-////
 var tec1 = document.getElementById('1');
+//Cambio de Tamaño//
+tec1.addEventListener("mousedown", function()
+{
+    tec1.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec1.addEventListener("mouseout", function()
+{
+    tec1.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec1.addEventListener("click",function(event)
 {
-    var MnsTecla1 ="1";
-    document.getElementById('1').onclick=ReducirTamaño;
-    document.getElementById('1').onmouseout=tamañoNormal; 
+    var MnsTecla1 ="1"; 
     document.querySelector('.pantalla #display').innerHTML = MnsTecla1;
 });
 
 ////Tecla2////
-//Cambio de Tamaño//
-document.getElementById('2').addEventListener("mousedown", mouseDowna);
-document.getElementById('2').addEventListener("mouseup", mouseUpa);
-
-function mouseDowna()
-{
-    document.getElementById('2').style.width="21%";
-}
-function mouseUpa()
-{
-    document.getElementById('2').style.width="22%";
-}
-////
 var tec2 = document.getElementById('2');
+//Cambio de Tamaño//
+tec2.addEventListener("mousedown", function()
+{
+    tec2.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec2.addEventListener("mouseout", function()
+{
+    tec2.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec2.addEventListener("click",function(event)
 {
     var MnsTecla2 ="2";
-    tec2.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla2;
 });
 
 ////Tecla3////
-//Cambio de Tamaño//
-document.getElementById('3').addEventListener("mousedown", mousePress);
-document.getElementById('3').addEventListener("mouseup", mousedesPress);
-
-function mousePress()
-{
-    document.getElementById('3').style.width="21%";
-}
-function mousedesPress()
-{
-    document.getElementById('3').style.width="22%";
-}
-////
 var tec3 = document.getElementById('3');
+//Cambio de Tamaño//
+tec3.addEventListener("mousedown", function()
+{
+    tec3.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec3.addEventListener("mouseout", function()
+{
+    tec3.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec3.addEventListener("click",function(event)
 {
     var MnsTecla3 ="3";
-    tec3.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla3;
 });
 
 ////Tecla4////
-//Cambio de Tamaño//
-document.getElementById('4').addEventListener("mousedown", numPress);
-document.getElementById('4').addEventListener("mouseup", NumdesPress);
-
-function numPress()
-{
-    document.getElementById('4').style.width="21%";
-}
-function NumdesPress()
-{
-    document.getElementById('4').style.width="22%";
-}
-////
 var tec4 = document.getElementById('4');
+//Cambio de Tamaño//
+tec4.addEventListener("mousedown", function()
+{
+    tec4.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec4.addEventListener("mouseout", function()
+{
+    tec4.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec4.addEventListener("click",function(event)
 {
     var MnsTecla4 ="4";
-    tec4.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla4;
 });
 
 ////Tecla5////
-//Cambio de Tamaño//
-document.getElementById('5').addEventListener("mousedown", botPress);
-document.getElementById('5').addEventListener("mouseup", botdesPress);
-
-function botPress()
-{
-    document.getElementById('5').style.width="21%";
-}
-function botdesPress()
-{
-    document.getElementById('5').style.width="22%";
-}
-////
 var tec5 = document.getElementById('5');
+//Cambio de Tamaño//
+tec5.addEventListener("mousedown", function()
+{
+    tec5.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec5.addEventListener("mouseout", function()
+{
+    tec5.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec5.addEventListener("click",function(event)
 {
     var MnsTecla5 ="5";
-    tec5.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla5;
 });
 
 ////Tecla6////
-//Cambio de Tamaño//
-document.getElementById('6').addEventListener("mousedown", botoPress);
-document.getElementById('6').addEventListener("mouseup", botodesPress);
-
-function botoPress()
-{
-    document.getElementById('6').style.width="21%";
-}
-function botodesPress()
-{
-    document.getElementById('6').style.width="22%";
-}
-////
 var tec6 = document.getElementById('6');
+//Cambio de Tamaño//
+tec6.addEventListener("mousedown", function()
+{
+    tec6.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec6.addEventListener("mouseout", function()
+{
+    tec6.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec6.addEventListener("click",function(event)
 {
     var MnsTecla6 ="6";
-    tec6.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla6;
 });
 
 ////Tecla7////
-//Cambio de Tamaño//
-document.getElementById('7').addEventListener("mousedown", botonPress);
-document.getElementById('7').addEventListener("mouseup", botondesPress);
-
-function botonPress()
-{
-    document.getElementById('7').style.width="21%";
-}
-function botondesPress()
-{
-    document.getElementById('7').style.width="22%";
-}
-////
 var tec7 = document.getElementById('7');
+//Cambio de Tamaño//
+tec7.addEventListener("mousedown", function()
+{
+    tec7.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec7.addEventListener("mouseout", function()
+{
+    tec7.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec7.addEventListener("click",function(event)
 {
     var MnsTecla7 ="7";
-    tec7.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla7;
 });
 
 ////Tecla8////
-//Cambio de Tamaño//
-document.getElementById('8').addEventListener("mousedown", numePress);
-document.getElementById('8').addEventListener("mouseup", numedesPress);
-
-function numePress()
-{
-    document.getElementById('8').style.width="21%";
-}
-function numedesPress()
-{
-    document.getElementById('8').style.width="22%";
-}
-////
 var tec8 = document.getElementById('8');
+//Cambio de Tamaño//
+tec8.addEventListener("mousedown", function()
+{
+    tec8.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec8.addEventListener("mouseout", function()
+{
+    tec8.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec8.addEventListener("click",function(event)
 {
     var MnsTecla8 ="8";
-    tec8.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla8;
 });
 
 ////Tecla9////
-//Cambio de Tamaño//
-document.getElementById('9').addEventListener("mousedown", Presionandobnt);
-document.getElementById('9').addEventListener("mouseup", desprecionandobtn);
-
-function Presionandobnt()
-{
-    document.getElementById('9').style.width="21%";
-}
-function desprecionandobtn()
-{
-    document.getElementById('9').style.width="22%";
-}
-////
 var tec9 = document.getElementById('9');
+//Cambio de Tamaño//
+tec9.addEventListener("mousedown", function()
+{
+    tec9.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec9.addEventListener("mouseout", function()
+{
+    tec9.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tec9.addEventListener("click",function(event)
 {
     var MnsTecla9 ="9";
-    tec9.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla9;
 });
 
 ////Tecla0////
-//Cambio de Tamaño//
-document.getElementById('0').addEventListener("mousedown", PressBtn);
-document.getElementById('0').addEventListener("mouseup", DesPress);
-
-function PressBtn()
-{
-    document.getElementById('0').style.width="21%";
-}
-function DesPress()
-{
-    document.getElementById('0').style.width="22%";
-}
-////
 var tec0 = document.getElementById('0');
+//Cambio de Tamaño//
+tec0.addEventListener("mousedown", function()
+{
+    tec0.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tec0.addEventListener("mouseout", function()
+{
+    tec0.setAttribute("style","transform:scale(1,1)")
+});
+//////
 tec0.addEventListener("click",function(event)
 {
     var MnsTecla0 ="0";
-    tec0.style.width = "20%";
     document.querySelector('.pantalla #display').innerHTML = MnsTecla0;
 });
 
 ////tecla.////
-//Cambio de Tamaño//
-document.getElementById('punto').addEventListener("mousedown", PuntoPress);
-document.getElementById('punto').addEventListener("mouseup", PuntoDesPress);
-
-function PuntoPress()
-{
-    document.getElementById('punto').style.width="21%";
-}
-function PuntoDesPress()
-{
-    document.getElementById('punto').style.width="22%";
-}
-////
 var tecpunto = document.getElementById('punto')
+//Cambio de Tamaño//
+tecpunto.addEventListener("mousedown", function()
+{
+    tecpunto.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecpunto.addEventListener("mouseout", function()
+{
+    tecpunto.setAttribute("style","transform:scale(1,1)")
+});
+/////////
 tecpunto.addEventListener("click",function(event)
 {
     var MnsPunto=".";
-    tecpunto.style.width ="20%";
     document.querySelector('.pantalla #diplay').innerHTML = MnsPunto;
 });
 /////////////////////////////////Teclas de operacion
 
 ////operacion Suma////
-//Cambio de Tamaño//
-document.getElementById('mas').addEventListener("mousedown", SumaPress);
-document.getElementById('mas').addEventListener("mouseup", SumaDesPress);
-
-function SumaPress()
-{
-    document.getElementById('mas').style.width="21%";
-}
-function SumaDesPress()
-{
-    document.getElementById('mas').style.width="22%";
-}
-////
 var tecsuma = document.getElementById('mas')
+//Cambio de Tamaño//
+tecsuma.addEventListener("mousedown", function()
+{
+    tecsuma.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecsuma.addEventListener("mouseout", function()
+{
+    tecsuma.setAttribute("style","transform:scale(1,1)")
+});
+///////
 tecsuma.addEventListener("click",function(event)
 {
     var mensaje1="+";
@@ -288,20 +249,18 @@ tecsuma.addEventListener("click",function(event)
 });
 
 ////operacion Resta////
-//Cambio de Tamaño//
-document.getElementById('menos').addEventListener("mousedown", RestaPress);
-document.getElementById('menos').addEventListener("mouseup", RestaDesPress);
-
-function RestaPress()
-{
-    document.getElementById('menos').style.width="21%";
-}
-function RestaDesPress()
-{
-    document.getElementById('menos').style.width="22%";
-}
-////
 var tecresta = document.getElementById('menos')
+//Cambio de Tamaño//
+tecresta.addEventListener("mousedown", function()
+{
+    tecresta.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecresta.addEventListener("mouseout", function()
+{
+    tecresta.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tecresta.addEventListener("click",function(event)
 {
     var mensaje2="-";
@@ -309,20 +268,18 @@ tecresta.addEventListener("click",function(event)
 });
 
 ////operacion Multiplicacion////
-//Cambio de Tamaño//
-document.getElementById('por').addEventListener("mousedown", PorPress);
-document.getElementById('por').addEventListener("mouseup", PorDesPress);
-
-function PorPress()
-{
-    document.getElementById('por').style.width="21%";
-}
-function PorDesPress()
-{
-    document.getElementById('por').style.width="22%";
-}
-////
 var tecmulti = document.getElementById('por')
+//Cambio de Tamaño//
+tecmulti.addEventListener("mousedown", function()
+{
+    tecmulti.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecmulti.addEventListener("mouseout", function()
+{
+    tecmulti.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tecmulti.addEventListener("click",function(event)
 {
     var mensaje3="*";
@@ -330,20 +287,18 @@ tecmulti.addEventListener("click",function(event)
 });
 
 ////operacion divicion////
-//Cambio de Tamaño//
-document.getElementById('dividido').addEventListener("mousedown", DividirPress);
-document.getElementById('dividido').addEventListener("mouseup", DividirDesPress);
-
-function DividirPress()
-{
-    document.getElementById('dividido').style.width="21%";
-}
-function DividirDesPress()
-{
-    document.getElementById('dividido').style.width="22%";
-}
-////
 var tecdivicion = document.getElementById('dividido')
+//Cambio de Tamaño//
+tecdivicion.addEventListener("mousedown", function()
+{
+    tecdivicion.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecdivicion.addEventListener("mouseout", function()
+{
+    tecdivicion.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tecdivicion.addEventListener("click",function(event)
 {
     var mensaje4="/";
@@ -351,20 +306,18 @@ tecdivicion.addEventListener("click",function(event)
 });
 
 ////Signo negativo////
-//Cambio de Tamaño//
-document.getElementById('sign').addEventListener("mousedown", SignoPress);
-document.getElementById('sign').addEventListener("mouseup", SignoDesPress);
-
-function SignoPress()
-{
-    document.getElementById('sign').style.width="21%";
-}
-function SignoDesPress()
-{
-    document.getElementById('sign').style.width="22%";
-}
-////
 var tecnegativa = document.getElementById('sign')
+//Cambio de Tamaño//
+tecnegativa.addEventListener("mousedown", function()
+{
+    tecnegativa.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecnegativa.addEventListener("mouseout", function()
+{
+    tecnegativa.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tecnegativa.addEventListener("click",function(event)
 {
     var signNegativo="-";
@@ -372,20 +325,18 @@ tecnegativa.addEventListener("click",function(event)
 });
 
 ////Resultados y Consecutivos////
-//Cambio de Tamaño//
-document.getElementById('igual').addEventListener("mousedown", IgualPress);
-document.getElementById('igual').addEventListener("mouseup", IgualDesPress);
-
-function IgualPress()
-{
-    document.getElementById('igual').style.width="21%"; 
-}
-function IgualDesPress()
-{
-    document.getElementById('igual').style.width="22%";
-}
-////
 var tecResult = document.getElementById('igual')
+//Cambio de Tamaño//
+tecResult.addEventListener("mousedown", function()
+{
+    tecResult.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecResult.addEventListener("mouseout", function()
+{
+    tecResult.setAttribute("style","transform:scale(1,1)")
+});
+////////
 tecResult.addEventListener("click",function(event)
 {
     var mensaje5="=";
