@@ -232,7 +232,9 @@ function obtener_9()
     numero(nueve);
 }
 
+//////////////////////////////////////////////
 ////////Funciones, Reiniciar y Decimal////////
+/////////////////////////////////////////////
 
 ////Tecla ON/C////
 var teclaOn = document.getElementById('on');
@@ -249,7 +251,30 @@ teclaOn.addEventListener("mouseout", function()
 });
 
 /////Obtener el Funcion/////
-document.getElementById('on').addEventListener("click", borradoTotal);
+teclaOn.addEventListener("click", function()
+{
+    borradoTotal();
+})
+
+////Signo negativo////
+var tecnegativa = document.getElementById('sign')
+
+//Cambio de Tamaño//
+tecnegativa.addEventListener("mousedown", function()
+{
+    tecnegativa.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecnegativa.addEventListener("mouseout", function()
+{
+    tecnegativa.setAttribute("style","transform:scale(1,1)")
+});
+
+/////Obtener el Funcion/////
+tecnegativa.addEventListener("click", function()
+{
+    opuest();
+});
 
 ////Resultados y Consecutivos////
 var tecResult = document.getElementById('igual')
@@ -265,7 +290,30 @@ tecResult.addEventListener("mouseout", function()
     tecResult.setAttribute("style","transform:scale(1,1)")
 });
 /////Obtener el Funcion/////
-document.getElementById('igual').addEventListener("click", resultado);
+tecResult.addEventListener("click", function()
+{
+    resultado();
+});
+
+////tecla .////
+var tecpunto = document.getElementById('punto')
+
+//Cambio de Tamaño//
+tecpunto.addEventListener("mousedown", function()
+{
+    tecpunto.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecpunto.addEventListener("mouseout", function()
+{
+    tecpunto.setAttribute("style","transform:scale(1,1)")
+});
+/////Obtener Punto/////
+tecpunto.addEventListener("click",function(event)
+{
+    var Punto_decimal=".";
+    numero(Punto_decimal);
+});
 
 ////operacion Suma////
 var tecsuma = document.getElementById('mas')
@@ -282,13 +330,87 @@ tecsuma.addEventListener("mouseout", function()
 });
 
 /////Obtener el Funcion/////
-document.getElementById('mas').addEventListener("click", suma);
-function suma() 
+tecsuma.addEventListener("click",function(event)
 {
-    var sumar = document.getElementById('mas').setAttribute("class","+");
+    var sumar="+";
     operar(sumar);
-}
+});
 
+////operacion Resta////
+var tecresta = document.getElementById('menos')
+
+//Cambio de Tamaño//
+tecresta.addEventListener("mousedown", function()
+{
+    tecresta.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecresta.addEventListener("mouseout", function()
+{
+    tecresta.setAttribute("style","transform:scale(1,1)")
+});
+
+/////Obtener el Funcion/////
+tecresta.addEventListener("click",function(event)
+{
+    var Resta="-";
+    operar(Resta);
+});
+
+////operacion Multiplicacion////
+var tecmulti = document.getElementById('por')
+
+//Cambio de Tamaño//
+tecmulti.addEventListener("mousedown", function()
+{
+    tecmulti.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecmulti.addEventListener("mouseout", function()
+{
+    tecmulti.setAttribute("style","transform:scale(1,1)")
+});
+
+/////Obtener el Funcion/////
+tecmulti.addEventListener("click",function(event)
+{
+    var Multiplicar="*";
+    operar(Multiplicar);
+});
+
+////operacion divicion////
+var tecdivicion = document.getElementById('dividido')
+
+//Cambio de Tamaño//
+tecdivicion.addEventListener("mousedown", function()
+{
+    tecdivicion.setAttribute("style","transform:scale(0.95,0.95)")
+});
+
+tecdivicion.addEventListener("mouseout", function()
+{
+    tecdivicion.setAttribute("style","transform:scale(1,1)")
+});
+
+/////Obtener el Funcion/////
+tecdivicion.addEventListener("click",function(event)
+{
+    var dividir="/";
+    operar(dividir);
+});
+
+//operacion raiz//
+var tecraiz = document.getElementById('raiz')
+
+//cambio tamaño
+tecraiz.addEventListener("mousedown",function()
+{
+    tecraiz.setAttribute("style", "transform:scale(0.95,0.95)")
+});
+tecraiz.addEventListener("mouseout",function()
+{
+    tecraiz.setAttribute("style", "transform:scale(1,1)")
+});
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////Para visualizar los primeros numero////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -382,17 +504,17 @@ function operar(s)
          encadenar_ope=1; //inicializar pantalla.
 
 /////////////////////Posible idea para consegir que al clickear igual varias veces se encadene el segundo numero mas la operacion asignada mas el resultado de la operacion anterior        
-        encadena=sol+ni
-        display.innerHTML=encadena
+        /*encadena=sol+ni
+        display.innerHTML=encadena*/
 }	
 
 //Numero Negativo//
-function negativo() 
+function opuest() 
 { 
-    nx=Number(x); //convertir en número
+    nx=Number(guardar_num); //convertir en número
     nx=-nx; //cambiar de signo
     guardar_num=String(nx); //volver a convertir a cadena
-    display.innerHTML=x; //mostrar en pantalla.
+    display.innerHTML=guardar_num; //mostrar en pantalla.
 }
 
 //Tecla De borrado ON/C//
@@ -404,3 +526,31 @@ function borradoTotal()
     ni=0 //indicador de número oculto a 0;
     op="no" //borrar operación en curso.
 }
+
+/*//limitar numeros
+function limitarNumeros()
+{
+    var cadena = display.innerHTML
+    var numero = parseFloat(cadena)
+    limite = 8
+    if (cadena.indexOf(".") != -1)
+    {
+        limite++
+    }
+    if (cadena.indexOf("-")!= -1)
+    {
+        limite++
+    }
+
+    if (cadena.length > limite)
+    {
+        if (numero - numero.toFixed(0) == 0)
+        {
+            display.innerHTML = numero
+        }
+        else 
+        {
+            display.innerHTML = parseFloat(cadena).toPrecision(8)
+        }
+    }
+}*/
